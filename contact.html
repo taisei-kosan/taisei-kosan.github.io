@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日誠海運：お問合せ</title>
+  <meta name="description" content="日誠海運株式会社のWebサイトです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-logo">
+        <a href="index.html">
+          <img src="img/nissei.png" alt>
+          <span class="logo-text">日誠海運株式会社</span>
+        </a>
+      </div>
+      <button class="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">求人情報</a></li>
+	        <li><a href="contact.html">お問合せ</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero hero-contact">
+    <h1>お問合せ</h1>
+    <p class="hero-en">Contact</p>
+    <p class="hero-catch">
+      お問い合わせありがとうございます。下記の項⽬に内容を入力の上、「入力内容確認」を押してください。後ほど、担当者よりご連絡をいたします。<br>
+　　　状況によっては、返信に数日いただく場合がございますので、お急ぎの方は、お電話（0898-54-2532）にてご連絡ください。
+    </p>
+  </section>
+
+  <!-- 研究概要 -->
+  <section class="section">
+  <!--<div class="form_wrap p-recruit_contact">-->
+  <div class="section-inner">
+
+    <form class="form_table" method="POST" action="https://formsubmit.co/taisei-kkm@aj.wakwak.com" accept-charset="utf-8" id="syncer-recaptcha-form">
+    <!--<form class="form_table" method="POST" action="form.php" onSubmit="return sendmail(this);" accept-charset="utf-8" id="syncer-recaptcha-form">-->
+  
+      <!--<input type="hidden" name="_token" value="509f131ec973035701087433831f26ca">-->
+      <input type="hidden" name="_subject" value="日誠海運株式会社：HPからのお問合せ">
+        <table id="contact-form">
+            <tr>
+                <th>⽒名<span class="caution">*</span></th>
+                <td>
+                    <p class="input">
+                        <input type="text" placeholder="姓" class="name" name="sei" required><input type="text" placeholder="名" class="name" name="mei" required>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th>ふりがな<span class="caution">*<br>（ひらがなで⼊⼒ください）</span></th>
+                <td>
+                    <p class="input">
+                        <input type="text" placeholder="せい" class="name" name="kana_sei" required><input type="text" placeholder="めい" class="name" name="kana_mei" required>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th>ご住所<span class="caution"></span></th>
+                <td class="address">
+                    <div class="input">
+                        <p class=" mb15-">
+                            <!-- ▼郵便番号入力フィールド(3桁+4桁) -->〒
+                            <input type="text" name="zip-3" size="4" maxlength="3" class="zip-3">-<input type="text" name="zip-4" size="5" maxlength="4" class="zip-4" onKeyUp="AjaxZip3.zip2addr('zip-3','zip-4','addr1','addr2');">
+                        </p>
+                        <!-- ▼住所入力フィールド(都道府県+以降の住所) -->
+                        <input type="text" name="addr2" class="addr2">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>メールアドレス<span class="caution">*</span></th>
+                <td>
+                    <p class="input"><input type="text" name="email" required></p>
+                </td>
+            </tr>
+            <tr>
+                <th>電話番号<span class="caution">*</span></th>
+                <td>
+                    <p class="input"><input type="text" id="tel-1" class="tel" name="tel1" required>-<input type="text" id="tel-2" class="tel" name="tel2" required>-<input type="text" id="tel-3" class="tel" name="tel3" required></p>
+                </td>
+            </tr>
+            <tr>
+                <th>お問い合わせ内容<span class="caution">*</span></th>
+                <td><textarea name="inquiry" required></textarea></td>
+            </tr>
+        </table>
+
+
+        <div class="c-accept">
+            <div class="text">当社の<a href="#privacy">プライバシーポリシー</a>をご確認・同意の上、チェックをいれてください。</div>
+            <div class="c-checkbox">
+                <span class="">
+                    <label for="accept--1">
+                        <input type="checkbox" name="" value="同意する" id="accept--1" class="input-checkbox js-privacyAccept" required>
+                        <span class="c-checkbox-field-text">提供する個人情報の取り扱いに同意します。<span class="caution">*</span></span>
+                    </label>
+                </span>
+            </div>
+
+        </div>
+	<!--<p class="alC"><input type="submit" class="btn js-contactSubmitBtn" disabled="disabled" name="confirm" value="入力内容確認" data-callback="onSubmit"></p>-->
+  <p class="alC"><input type="submit" class="btn js-contactSubmitBtn" name="confirm" value="入力内容確認" data-callback="onSubmit"></p>
+
+         </form>
+      </div>
+</section>
+
+<section class="privacy-box" id="privacy">
+
+  <details>
+    <summary>
+      <span>プライバシーポリシー</span>
+      <span class="plus">＋</span>
+    </summary>
+
+    <div class="privacy-content">
+      <h3>プライバシーポリシー</h3>
+
+      <p>
+        日誠海運株式会社（以下「当社」といいます）は、お客様からお預かりする個人情報を適切に管理し、
+        以下の方針に基づき取り扱います。
+      </p>
+
+      <h4>1. 個人情報の利用目的</h4>
+      <p>
+        お客さまからお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、
+        電子メールや資料のご送付に利用いたします。
+      </p>
+
+      <h4>2. 個人情報の管理</h4>
+      <p>
+        当社は、お客さまの個人情報を正確かつ最新の状態に保ち、
+        個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するための
+        適切な安全管理措置を講じ、個人情報の厳重な管理を行ないます。
+      </p>
+
+      <h4>3. 個人情報の第三者提供</h4>
+      <p>
+        当社は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。<br><br>
+       ・お客さまの同意がある場合<br>
+       ・法令に基づき開示することが必要である場合<br>
+      </p>
+
+      <h4>4. お問い合わせ</h4>
+      <p>
+        当社の個人情報の取扱に関するお問い合わせは下記までご連絡ください。<br><br>
+
+        大誠興産 株式会社<br>
+        〒799-2302　愛媛県今治市菊間町種4595-5<br>
+        TEL 0898-54-2532 FAX 0898-54-3715<br>
+      </p>
+
+    </div>
+
+  </details>
+
+</section>
+
+
+  <!-- フッター -->
+  <div class="Pagefooter_wave">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#003366" fill-opacity="1" d="M0,64L60,96C120,128,240,192,360,213.3C480,235,600,213,720,176C840,139,960,85,1080,64C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+      </svg>
+  </div>
+  <footer class="site-footer">
+      <div class="footer-inner">
+      <div class="footer-info">
+        <h3> 日誠海運株式会社 </h3>
+        <p>〒799-2303 愛媛県今治市菊間町種４５６８</p>
+        <p>Tel: 0898-54-2532（代）</p>
+        <p>E-mail: taisei-kkm@aj.wakwak.com</p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html" target="_blank" rel="noopener">ホーム</a></li>
+          <li><a href="company.html" target="_blank" rel="noopener">会社概要</a></li>
+          <li><a href="recruit.html" target="_blank" rel="noopener">求人情報</a></li>
+          <li><a href="contact.html" target="_blank" rel="noopener">お問合せ</a></li>
+        </ul>
+      </div>
+     </div>
+
+    <div class="footer-bottom">
+      &copy; 2026 日誠海運株式会社
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
