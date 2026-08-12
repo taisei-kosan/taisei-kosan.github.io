@@ -1,0 +1,370 @@
+@charset "utf-8";
+/* CSS Document */
+
+table {
+	line-height: 1.7;
+}
+
+.table_company_info {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+	word-break: break-all;
+}
+.table_company_info_mb0 {
+	width: 100%;
+	border-collapse: collapse;
+	word-break: break-all;
+}
+.table_company_info td,
+.table_company_info th,
+.table_company_info_mb0 td,
+.table_company_info_mb0 th {
+	padding: 18px 32px;
+	border: 1px solid #B3B3B3;
+	vertical-align: middle;
+}
+.table_company_info th,
+.table_company_info_mb0 th {
+	font-weight: normal;
+	background-color: #E5F1F8;
+	vertical-align: middle;
+	width: 18%;
+}
+.table_normal {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	word-break: break-all;
+}
+.table_normal td,
+.table_normal th {
+	padding: 18px 32px;
+	border: 1px solid #B3B3B3;
+	vertical-align: middle;
+}
+.table_normal th {
+	font-weight: normal;
+	background-color: #E5F1F8;
+	vertical-align: middle;
+	width: 30%;
+}
+.table_normal2 {
+	width: 49%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	word-break: break-all;
+	float: left;
+}
+.table {
+	float: left;
+	width: 100%;
+}
+.table table.table_normal2:first-child {
+	width: 49%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	word-break: break-all;
+	float: left;
+	margin-right: 2%;
+}
+
+.table_normal2 td,
+.table_normal2 th {
+	padding: 18px 32px;
+	border: 1px solid #B3B3B3;
+	vertical-align: middle;
+}
+.table_normal2 th {
+	font-weight: normal;
+	background-color: #E5F1F8;
+	vertical-align: middle;
+	width: 30%;
+}
+
+.table_product_ship {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+	word-break: break-all;
+}
+.table_product_ship td,
+.table_product_ship th {
+	padding: 18px 32px;
+	border: 1px solid #B3B3B3;
+	vertical-align: middle;
+}
+.table_product_ship th {
+	font-weight: normal;
+	background-color: #E5F1F8;
+	vertical-align: middle;
+	width: 25%;
+}
+.table_product_plan_ship {
+	width: 100%;
+	border-collapse: collapse;
+	/*margin-bottom: 30px;*/
+	word-break: break-all;
+}
+.table_product_plan_ship td,
+.table_product_plan_ship th {
+	padding: 18px 32px;
+	border: 1px solid #B3B3B3;
+	vertical-align: middle;
+}
+.table_product_plan_ship th {
+	font-weight: normal;
+	background-color: #E5F1F8;
+	vertical-align: middle;
+	width: 50%;
+}
+.table_e-search {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	word-break: break-all;
+	text-align: center;
+}
+.table_e-search td,
+.table_e-search th {
+	padding: 26px 20px;
+	border: 1px solid #B3B3B3;
+	vertical-align: middle;
+}
+.table_e-search th.thblue {
+	font-size: 20px;
+	font-weight: normal;
+	background: #E5F1F8;
+}
+.table_e-search th.thglay {
+	font-size: 20px;
+	font-weight: normal;
+	background: #E6E6E6;
+}
+.table_e-search td.tdprice {
+	font-size: 24px;
+	color: #006FBC;
+	font-weight: bold;
+}
+.table_e-search td.tdprice span.small {
+	font-size: 14px;
+	font-weight: normal;
+}
+.table_e-search td.tdglay {
+	background: #E6E6E6;
+}
+
+/* ============================== レスポンシブ（480pxより狭い場合） ============================== */
+@media screen and (max-width: 480px) {
+.table_company_info,
+.table_company_info_mb0 {
+	margin-bottom: 0;
+}
+.table_company_info tr,
+.table_company_info_mb0 tr,
+.table_normal tr{
+	margin-bottom: 16px;
+	display: block;
+}
+.table_e-search {
+    border-left: 1px solid #B3B3B3;
+    border-right: 1px solid #B3B3B3;
+    border-bottom: 1px solid #B3B3B3;
+}
+.table_e-search tr {
+	margin-bottom: 0;
+	display: block;
+}
+.table_company_info tr:last-child,
+.table_company_info_mb0 tr:last-child,
+.table_normal tr:last-child,
+.table_e-search tr:last-child{
+	margin-bottom: 0;
+	display: block;
+}
+.table_company_info th,
+.table_company_info_mb0 th,
+.table_normal th,
+.table_normal2 th {
+    float: none;
+	display: block;
+	width: auto;
+	border: none;
+	padding: 8px 16px;
+	text-align: left;
+	font-weight: bold;
+}
+.table_e-search th {
+    float: none;
+	display: block;
+	width: auto;
+	border: none;
+	padding: 8px 16px;
+	text-align: left;
+	font-weight: bold;
+    border-top: 1px solid #B3B3B3;
+    border-bottom: 1px solid #B3B3B3;
+}
+.table_company_info td,
+.table_company_info_mb0 td,
+.table_normal td,
+.table_normal2 td {
+    float: none;
+	display: block;
+	width: auto;
+	border: none;
+	padding: 8px 16px;
+	text-align: left;
+}
+.table_normal2 {
+	width: 100%;
+}
+.table table.table_normal2:first-child {
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+.table_e-search td {
+    float: none;
+	display: block;
+	width: auto;
+	border: none;
+	padding: 8px 16px;
+	text-align: center;
+}
+.table_e-search_sp {
+    font-size: 16px;
+    font-weight: normal;
+	color: #333333;
+}
+.table_e-search td.tdprice {
+	font-size: 32px;
+}
+.table_e-search td.tdprice.tdglay {
+    padding-bottom: 0;
+}
+.table_e-search td.tdglay {
+    background-color: #FFFFFF;
+}
+	
+.table_company_info tr:last-child td,
+.table_company_info_mb0 tr:last-child td,
+.table_normal tr:last-child td {
+    padding-bottom: 0;
+}
+.table_product_ship th {
+	display: none;
+}
+.table_product_ship tr {
+	display: block;
+	float: none;
+	margin-bottom: 28px;
+	border-bottom: 1px dotted #B3B3B3;
+}
+.table_product_ship tr:first-child {
+	display: none;
+}
+.table_product_ship tr:last-child {
+	margin-bottom: 12px;
+}
+
+.table_product_ship td {
+	border: none;
+	padding: 0;
+	margin-bottom: 8px;
+}
+.table_product_ship td.type,
+.table_product_ship td.ton,
+.table_product_ship td.area,
+.table_product_ship td.route {
+	display: block;
+	float: none;
+}
+.table_product_ship td.type span,
+.table_product_ship td.ton span,
+.table_product_ship td.area span,
+.table_product_ship td.route span {
+	display: block;
+	padding: 8px 16px;
+}
+.table_product_ship td.type::before {
+    content: "船種\A";
+	white-space: pre;
+	font-weight: bold;
+	background-color: #E5F1F8;
+	display: block;
+	padding: 8px 16px;
+}
+.table_product_ship td.ton::before {
+    content: "総トン数\A";
+	white-space: pre;
+	font-weight: bold;
+	background-color: #E5F1F8;
+	display: block;
+	padding: 8px 16px;
+}
+.table_product_ship td.area::before {
+    content: "航行区域\A";
+	white-space: pre;
+	font-weight: bold;
+	background-color: #E5F1F8;
+	display: block;
+	padding: 8px 16px;
+}
+.table_product_ship td.route::before {
+    content: "航路\A";
+	white-space: pre;
+	font-weight: bold;
+	background-color: #E5F1F8;
+	display: block;
+	padding: 8px 16px;
+}
+.table_product_plan_ship th {
+	display: none;
+}
+.table_product_plan_ship tr {
+	display: block;
+	float: none;
+	margin-bottom: 28px;
+	border-bottom: 1px dotted #B3B3B3;
+}
+.table_product_plan_ship tr:first-child {
+	display: none;
+}
+.table_product_plan_ship tr:last-child {
+	margin-bottom: 0;
+}
+.table_product_plan_ship td {
+	border: none;
+	padding: 0;
+	margin-bottom: 8px;
+}
+.table_product_plan_ship td.type,
+.table_product_plan_ship td.ton {
+	display: block;
+	float: none;
+}
+.table_product_plan_ship td.type span,
+.table_product_plan_ship td.ton span {
+	display: block;
+	padding: 8px 16px;
+}
+.table_product_plan_ship td.type::before {
+    content: "船種\A";
+	white-space: pre;
+	font-weight: bold;
+	background-color: #E5F1F8;
+	display: block;
+	padding: 8px 16px;
+}
+.table_product_plan_ship td.ton::before {
+    content: "総トン数\A";
+	white-space: pre;
+	font-weight: bold;
+	background-color: #E5F1F8;
+	display: block;
+	padding: 8px 16px;
+}
+
+}

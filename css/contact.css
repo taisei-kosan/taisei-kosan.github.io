@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+.mb10 { margin-bottom:10px !important; }
+.mb15 { margin-bottom:15px !important; }
+
+
+section.contact { margin-bottom:0; }
+section.contact h3 { margin-bottom:20px; text-align:center; font-size:24px; }
+
+.white_box { height:200px; }
+.under_mainvisual { margin-bottom:0; }
+.under_mainvisual-contact { height:200px; background:url(../img/under_mainvisual-contact.png) 50% no-repeat; background-size:cover; }
+
+.caution { color:#eb1c24; }
+.lead { padding:60px 0; }
+
+table#contact-form { 
+margin-bottom:60px; 
+max-width: 850px;       /* フォーム全体のちょうどいい最大幅を指定 */
+margin-left: auto;      /* 左の余白を自動調整 */
+margin-right: auto;     /* 右の余白を自動調整 */
+width:100%; border-top:1px solid #dbdbdb; 
+border-collapse:collapse; 
+}
+
+table#contact-form tr { }
+
+table#contact-form th { padding:1em 0; padding-right: 50px; width:300px; border-bottom:1px solid #dbdbdb; text-align:left; font-weight:normal; }
+table#contact-form td { padding:1em 0; border-bottom:1px solid #dbdbdb; text-align:left; }
+table#contact-form td p.caution { padding-top:10px; }
+
+/* input[type='text'] */
+table#contact-form input[type='text'] { padding:1em; width:330px; height:40px; border:1px solid #e4e4e4; }
+table#contact-form input[type='text'].name { margin-right:10px; width:160px; }
+table#contact-form input[type='text'].zip-3 { margin-right:10px; width:60px; }
+table#contact-form input[type='text'].zip-4 { margin-right:10px; margin-left:10px; width:80px; }
+table#contact-form input[type='text'].address { width:400px; }
+table#contact-form input[type='text'].error { background-color:#FFCCCC; }
+
+/* input[type='button'] */
+table#contact-form input[type='button'] { width:175px; height:40px; background-color:#002868; color:#ffffff; border-radius:20px; transition: all .2s ease-in; }
+table#contact-form input[type='button']:hover { background-color:#0076b5; }
+
+/* select */
+table#contact-form select { margin-right:8px; padding:0 1em; width:105px; height:40px; color:#979797; border:1px solid #e4e4e4; border-radius:0;  }
+table#contact-form select::after { content:''; width:1px; height:1px; border-style:solid; border-width:10px 5px 0 5px ; border-color: #000000 transparent transparent transparent; display:inline-block; border:1px solid #000000; }
+table#contact-form select.error { background-color:#FFCCCC; }
+
+/* tel */
+table#contact-form input[type='text'].tel { margin-right:10px; width:90px; }
+table#contact-form input[type='text']#tel-2 { margin-left:10px; }
+table#contact-form input[type='text']#tel-3 { margin-left:10px; }
+
+/* fax */
+table#contact-form input[type='text'].fax { margin-right:10px; width:90px; }
+table#contact-form input[type='text']#fax-2 { margin-left:10px; }
+table#contact-form input[type='text']#fax-3 { margin-left:10px; }
+
+/* textarea */
+table#contact-form textarea { width:530px; height:130px; border:1px solid #e4e4e4; }
+
+/* input.btn */
+input.btn { margin:auto; padding:1em 0; width:calc(360/950*100%); background-color:#0076b5; color:#ffffff; transition: all .2s ease-in; }
+input.btn:hover { background-color:#002868; }
+
+/* a.btn */
+a.btn { 
+margin:auto; padding:1em 0; width:calc(360/950*100%); background-color:#0076b5; color:#ffffff; transition: all .2s ease-in; display:block; 
+text-align: center; 
+}
+a.btn:hover { background-color:#002868; }
+section.contact a.btn { margin-top:50px; }
+
+
+
+
+
+@media screen and (max-width:980px){
+.under_mainvisual { margin-bottom:0; }
+}
+
+@media screen and (max-width:768px){
+
+.contact { margin-bottom:0; }
+.lead { padding:40px 0; }
+
+table#contact-form { margin-bottom:40px; }
+table#contact-form th { padding-bottom:0; width:100%; border-bottom:0; display:block; }
+table#contact-form td { display:flex; justify-content:space-between; flex-wrap:wrap; }
+table#contact-form td p.caution { width:100%; }
+table#contact-form td p.input { display:flex; justify-content:space-between; }
+
+table#contact-form input[type='text'] { width:100%; box-sizing:border-box; }
+table#contact-form input[type='text'].name { margin-right:calc(10/360*100%); width:calc(175/360*100%); }
+table#contact-form input[type='text'].name:last-child { margin-right:0; }
+
+table#contact-form td.address { flex-direction:column; }
+table#contact-form input[type='text'].addr2 { width:100%; }
+
+
+
+/* select */
+table#contact-form select { margin-bottom:15px; width:calc(165/360*100%); }
+
+/* tel */
+table#contact-form input[type='text'].tel { margin-right:calc(11/360*100%); width:calc(102/360*100%); }
+table#contact-form input[type='text']#tel-2 { margin-left:calc(11/360*100%); }
+table#contact-form input[type='text']#tel-3 { margin-left:calc(11/360*100%); margin-right:0; }
+
+/* fax */
+table#contact-form input[type='text'].fax { margin-right:calc(11/360*100%); width:calc(102/360*100%); }
+table#contact-form input[type='text']#fax-2 { margin-left:calc(11/360*100%); }
+table#contact-form input[type='text']#fax-3 { margin-left:calc(11/360*100%); margin-right:0; }
+
+
+/* textarea */
+table#contact-form textarea { width:100%; }
+
+/* input.btn */
+input.btn { width:calc(280/360*100%); }
+
+
+.white_box { height:calc(160/720*100vw); }
+
+}
+
+.content-recap {
+	margin: auto;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+p.alC {
+  text-align: center; /* 中にあるボタンを中央に寄せる */
+  width: 100%;        /* 横幅をいっぱいにして中央基準を作る */
+}
