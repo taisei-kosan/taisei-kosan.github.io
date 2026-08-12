@@ -218,13 +218,13 @@ video {
 .hero-recruit {
   background-image:
     linear-gradient(rgba(12,44,71,.55), rgba(12,44,71,.55)),
-    url("../img/main/image3.jpeg");
+    url("../img/hero/recruit-hero.jpeg");
 }
 
 .hero-company {
   background-image:
     linear-gradient(rgba(12,44,71,.55), rgba(12,44,71,.55)),
-    url("../img/main/image2.jpeg");
+    url("../img/hero/company-hero.jpeg");
 }
 
 .hero-contact {
